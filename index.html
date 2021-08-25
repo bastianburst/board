@@ -16,14 +16,19 @@
 <body>
     <header>
         <div>
-             <h1><img src="img/png/color-palette.png" width="50px" height="50px"/>Pizarra</h1>
+            <h1><img src="img/png/color-palette.png" width="50px" height="50px" />Pizarra</h1>
         </div>
-      
+
     </header>
     <div class="container_principal">
         <div class="container">
             <div>
                 <form class="form">
+                    <div>
+                        <div class=""><img alt="Lápiz" src="img/svg/setting.svg" width="25px"
+                                height="25px" /> Tools
+                        </div>
+                    </div>
 
                     <div>
                         <label><img src="img/svg/width.svg" width="20px" height="20px"
@@ -42,12 +47,12 @@
                                 width="20px" height="20px" /> </div>
                     </div>
                     <div>
-                        <div class="pizarraelement" onclick="borrar();"><img alt="Borrar todo" src="img/svg/remove.svg"
+                        <div class="pizarraelement" onclick="borrar();" alt="Borrar todo"><img alt="Borrar todo" src="img/svg/remove.svg"
                                 width="20px" height="20px" /> </div>
                         <div class="pizarraelement">
                             <a id="download" class="button" download="download.png" href="#" target="_blank"
                                 onclick="guardarImagen();"><img src="img/svg/download.svg" width="20px"
-                                    height="20px" />Download</a>
+                                    height="20px" /> Download</a>
                         </div>
                     </div>
                 </form>
@@ -66,7 +71,7 @@
         </div>
     </div>
     <footer>
-        <p>@bastianburst</p> 
+        <p>@bastianburst</p>
     </footer>
     <script type="text/javascript" src="js/mouse.js"></script>
     <script type="text/javascript" src="js/select.js"></script>

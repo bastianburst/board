@@ -53,7 +53,7 @@ input, .pizarraelement{
     background-color: #efefef;
 }
 .selectorcanvas{
-    background: darkgrey;
+    background: efefef;
     color: #272727;
     font-family: 'Rampart One', cursive;
     font-weight: bold;
@@ -61,6 +61,6 @@ input, .pizarraelement{
 }
 
 .selectorcanvas:hover{
-    background-color: rgb(168, 157, 157);
+    background-color: rgb(238, 234, 234);
     border:1px solid rgb(52, 105, 136);
 }
