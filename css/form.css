@@ -1,0 +1,66 @@
+.form{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+}
+.form > div{
+    border-radius: 5px;
+    padding: .5em;
+    margin-right: .2em;
+    margin-bottom: .2em;
+    background-color: #e0e0e0;
+    box-shadow: gray 1px 2px 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90px;
+    text-align: center;
+}
+
+.form2 > div{
+    border-radius: 5px;
+    padding: .2em;
+    margin:.2em;
+    background-color: #8d8d8d;
+    box-shadow: gray 1px 2px 3px;
+    display: flex;
+    flex-direction: column;
+    max-width: 90px;
+    text-align: center; 
+    color:white;
+}
+
+input:hover, .pizarraelement:hover{
+    background-color: rgb(168, 157, 157);
+    border:1px solid rgb(52, 105, 136);
+}
+
+label{
+    display: inline-block;
+    max-width: 2em;
+}
+a{
+    text-decoration: none;
+    color:rgb(52, 105, 136);
+}
+input, .pizarraelement{
+    cursor:pointer;
+    display: inline-block;
+    border:1px solid gray;
+    padding: .2em;
+    margin:.2em;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+.selectorcanvas{
+    background: darkgrey;
+    color: #272727;
+    font-family: 'Rampart One', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.selectorcanvas:hover{
+    background-color: rgb(168, 157, 157);
+    border:1px solid rgb(52, 105, 136);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastián Gallego - Bastianburst">
+    <title>Pizarra</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/color-palette.ico" />
+</head>
+
+<body>
+    <header>
+        <div>
+             <h1><img src="img/png/color-palette.png" width="50px" height="50px"/>Pizarra</h1>
+        </div>
+      
+    </header>
+    <div class="container_principal">
+        <div class="container">
+            <div>
+                <form class="form">
+
+                    <div>
+                        <label><img src="img/svg/width.svg" width="20px" height="20px"
+                                alt="Tamaño de elemento" /></label>
+                        <input type="range" value="1" id="tamano" />
+                    </div>
+                    <div>
+                        <label><img src="img/svg/color-circle.svg" width="20px" height="20px" alt="Color" /></label>
+
+                        <input type="color" value="#ff0000" id="color" />
+                    </div>
+                    <div>
+                        <div class="pizarraelement" onclick="borrador();"><img alt="Borrador" src="img/svg/eraser.svg"
+                                width="20px" height="20px" /></div>
+                        <div class="pizarraelement" onclick="lapiz();"><img alt="Lápiz" src="img/svg/pencil.svg"
+                                width="20px" height="20px" /> </div>
+                    </div>
+                    <div>
+                        <div class="pizarraelement" onclick="borrar();"><img alt="Borrar todo" src="img/svg/remove.svg"
+                                width="20px" height="20px" /> </div>
+                        <div class="pizarraelement">
+                            <a id="download" class="button" download="download.png" href="#" target="_blank"
+                                onclick="guardarImagen();"><img src="img/svg/download.svg" width="20px"
+                                    height="20px" />Download</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div>
+                <form class="form2">
+                    <select name="selectorcanvas" id="selectorcanvas" class="selectorcanvas"
+                        onchange="selectCanvasDimentions()" size="1">
+                        <option value="aleatorio">Elige dimensiones</option>
+                    </select>
+                    <div id="shownumberselected"></div>
+                </form>
+                <canvas style="border: 1px solid gray" id="drawmouse"></canvas>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>@bastianburst</p> 
+    </footer>
+    <script type="text/javascript" src="js/mouse.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+</body>
+
+</html>

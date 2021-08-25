@@ -1,0 +1,17 @@
+header{
+    background:rgb(63, 94, 151);
+    color: white;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+header div > h1{
+    margin-left: .2em;
+}
